@@ -63,6 +63,10 @@
     <Compile Include="Assets\TestScenes\Hello.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\1.Dissolve\Bag\source_attribution.txt" />
+    <None Include="Assets\1.Dissolve\BurningDissolve.shader" />
+  </ItemGroup>
+  <ItemGroup>
     <Reference Include="UnityEngine">
       <HintPath>D:\Software\Unity\2022.3.40f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
       <Private>False</Private>
