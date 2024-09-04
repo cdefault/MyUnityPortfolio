@@ -9,5 +9,6 @@
 /Logs
 /Library
 /UserSettings
-/*.csproj
-/*.csproj.user
+*.csproj
+*.csproj.user
+.vsconfig
