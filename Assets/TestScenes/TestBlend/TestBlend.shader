@@ -55,6 +55,7 @@ Shader "Unlit/TestBlend"
                 o.vertex = UnityObjectToClipPos(v.vertex);
                 o.uv = TRANSFORM_TEX(v.uv, _MainTex) + float2(_MainUVSpeedX, _MainUVSpeedY) * _Time.y;
 
+
                 return o;
             }
 
