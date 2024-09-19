@@ -1,4 +1,4 @@
-Shader "Unlit/BurningDissolve"
+Shader "Portfolio/BurningDissolve"
 {
     Properties
     {

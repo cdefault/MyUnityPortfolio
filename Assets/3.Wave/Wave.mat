@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Wave
+  m_Shader: {fileID: 4800000, guid: 5bd66d6a2dc2ca241b95ea67f64d01a7, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _Amplitude: 0.1
+    - _Metallic: 0.283
+    - _Shininess: 0.538
+    - _Speed: 1
+    - _Steepness0: 0.292
+    - _Steepness1: 0.32
+    - _TessellationEdge: 14.8
+    - _TessellationEdgeLength: 0.808
+    - _TessellationInside: 1
+    - _Value: 1
+    - _Wavelength: 1
+    - _Wavelength0: 2.2
+    - _Wavelength1: 2
+    m_Colors:
+    - _Color: {r: 0.23921569, g: 0.627451, b: 0.83137256, a: 1}
+    - _WaveDir0: {r: 1, g: 0.5, b: 0, a: 0}
+    - _WaveDir1: {r: 1, g: 1, b: 0, a: 0}
+  m_BuildTextureStacks: []
