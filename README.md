@@ -69,3 +69,35 @@ Unity Shader学习过程中留下的一点作品
    在Hull Shader中，根据视距决定不同patch的细分系数
 
 4. 法线由微分法计算得出
+
+
+
+### 4.后处理
+
+通过脚本调用OnRenderImage()方法，以指定材质对屏幕像素进行处理。
+
+1. 二值化
+
+![4-PostProcessing1](READEME/4-PostProcessing2.png)
+
+2. 通过卷积实现的描边
+
+![4-PostProcessing1](READEME/4-PostProcessing1.png)
+
+### 5.光照
+
+右侧两为Lighting Shader，左一使用Standard Shader。其中漫反射，镜面反射光的基础量为Blinn-Phong模型计算得出。包含阴影接收，阴影投射，烘焙间接光，球谐环境光，自发光造成的间接光影响等特性。整个Shader离PBR渲染方式还有不少距离，但也算是基本包括了光照条件下需要的大部分内容。//TODO：完成PBR渲染的Shader
+
+
+
+1. 直接光照漫反射项（diffuse）受金属度（metallic）影响，若开启lightmap，受lightmap采样结果影响
+2. 直接光照镜面反射（specular）受光滑度（smoothness）影响。
+
+3. 环境光照（ambient）取自环境光的球谐结果
+4. 接收阴影的实现：静态物体的阴影通过烘焙贴图lightmap采样获得，动态物体通过shadowmap获得
+5. 投射阴影：即Shadowcaster Pass
+6. 别忘了Meta Pass
+
+
+
+![5-Lighting](READEME/5-Lighting2.png)
