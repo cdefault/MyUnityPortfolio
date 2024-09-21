@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Wave
-  m_Shader: {fileID: 4800000, guid: 5bd66d6a2dc2ca241b95ea67f64d01a7, type: 3}
+  m_Name: Lighting
+  m_Shader: {fileID: 4800000, guid: 45277ab616e4faa4c8bc75a85cdde636, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -29,21 +29,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Amplitude: 0.1
-    - _Metallic: 0.749
-    - _Shininess: 0.485
-    - _Speed: 1
-    - _Steepness0: 0.219
-    - _Steepness1: 0.228
-    - _TessellationEdge: 14.8
-    - _TessellationEdgeLength: 0.808
-    - _TessellationInside: 1
-    - _Value: 1
-    - _Wavelength: 1
-    - _Wavelength0: 4
-    - _Wavelength1: 9.3
+    - _Metallic: 0.57
+    - _Shininess: 0.541
+    - _TestValue: 1
     m_Colors:
-    - _Color: {r: 0.14869614, g: 0.58416474, b: 0.7688679, a: 1}
-    - _WaveDir0: {r: 1, g: 0.5, b: 0, a: 0}
-    - _WaveDir1: {r: -0.68, g: 0.68, b: 0, a: 0}
+    - _MainColor: {r: 0.5686275, g: 0.56078434, b: 0.5803922, a: 1}
+    - _TestValue: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
