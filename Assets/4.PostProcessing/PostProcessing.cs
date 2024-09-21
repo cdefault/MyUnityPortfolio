@@ -7,7 +7,11 @@ public class PostProcessing : MonoBehaviour
 {
     
     public Shader PostProcessingShader;
-    [Range(0f, 1f)] public float Value;
+    [Range(0f, 1f)] public float EdgeThreshold;
+    [Range(0f, 5f)] public float EdgeSize;
+    public Color EdgeColor;
+
+
     private Material m_Material;
     public Material Material
     {
@@ -40,7 +44,12 @@ public class PostProcessing : MonoBehaviour
 
     private void OnRenderImage(RenderTexture source, RenderTexture destination)
     {
-        Material.SetFloat("_Value", Value);
+
+
+        Material.SetFloat("_Value", EdgeThreshold);
+        Material.SetFloat("_EdgeThreshold", EdgeThreshold);
+        Material.SetFloat("_EdgeSize", EdgeSize);
+        Material.SetColor("_EdgeColor", EdgeColor);
         Graphics.Blit(source, destination, Material);
         //Debug.Log(Material.GetFloat("_Value"));
     }

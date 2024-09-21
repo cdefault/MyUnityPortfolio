@@ -3,7 +3,7 @@ Shader "Hidden/PostProcessing"
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        //_Value("Value", float) = 0.5
+        _Value("Value", float) = 0.5
     }
     SubShader
     {
@@ -25,7 +25,7 @@ Shader "Hidden/PostProcessing"
             {
                 fixed4 col = tex2D(_MainTex, i.uv);
 
-                col = step(_Value, col);
+                col = step(_Value, (col.r + col.g + col.b) / 3);
                 return col;
             }
             ENDCG
